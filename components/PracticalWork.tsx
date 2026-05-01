@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const benefits = [
   {
     title: "Clearer decisions",
@@ -66,17 +68,16 @@ export default function PracticalWork() {
 
           {/* Right: 2x2 benefit grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {benefits.map((benefit) => (
-              <div
-                key={benefit.title}
-                className="bg-[#F8FAFC] rounded-2xl border border-[#E2E8F0] p-5 space-y-3 hover:shadow-md hover:border-[#14B8A6]/30 transition-all duration-200"
-              >
-                <div className="w-9 h-9 rounded-xl bg-[#F0FDFA] border border-[#99f6e4] flex items-center justify-center">
-                  {benefit.icon}
+            {benefits.map((benefit, i) => (
+              <FadeIn key={benefit.title} delay={i * 80}>
+                <div className="bg-[#F8FAFC] rounded-2xl border border-[#E2E8F0] p-5 space-y-3 hover:shadow-md hover:border-[#14B8A6]/30 transition-all duration-200">
+                  <div className="w-9 h-9 rounded-xl bg-[#F0FDFA] border border-[#99f6e4] flex items-center justify-center">
+                    {benefit.icon}
+                  </div>
+                  <h3 className="text-[15px] font-semibold text-[#0F172A]">{benefit.title}</h3>
+                  <p className="text-sm text-[#64748B] leading-relaxed">{benefit.description}</p>
                 </div>
-                <h3 className="text-[15px] font-semibold text-[#0F172A]">{benefit.title}</h3>
-                <p className="text-sm text-[#64748B] leading-relaxed">{benefit.description}</p>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </div>

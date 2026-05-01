@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const tools = [
   { name: "Slack", highlight: false },
   { name: "Google Drive", highlight: false },
@@ -20,6 +22,7 @@ export default function Integrations() {
           Connect your people, your tools, and your workflows.
         </p>
 
+        <FadeIn>
         <div className="flex flex-wrap justify-center gap-3 mb-6">
           {tools.map((tool) => (
             <div
@@ -38,6 +41,7 @@ export default function Integrations() {
             </div>
           ))}
         </div>
+        </FadeIn>
 
         <p className="text-sm text-[#94a3b8]">
           And more — via open APIs and custom integrations.

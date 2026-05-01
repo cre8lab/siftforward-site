@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const cards = [
   {
     title: "Prompt & Intent Cleanup",
@@ -63,9 +65,9 @@ export default function WhatWeDo() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {cards.map((card) => (
+          {cards.map((card, i) => (
+            <FadeIn key={card.title} delay={i * 80}>
             <div
-              key={card.title}
               className="group bg-[#F8FAFC] rounded-2xl border border-[#E2E8F0] p-6 hover:shadow-lg hover:border-[#14B8A6]/30 hover:-translate-y-0.5 transition-all duration-200"
             >
               <div
@@ -81,6 +83,7 @@ export default function WhatWeDo() {
                 {card.description}
               </p>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>
