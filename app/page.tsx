@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhatWeDo from "@/components/WhatWeDo";
+import Ecosystem from "@/components/Ecosystem";
 import AIInAction from "@/components/AIInAction";
 import HowItWorks from "@/components/HowItWorks";
 import PracticalWork from "@/components/PracticalWork";
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <WhatWeDo />
+        <Ecosystem />
         <AIInAction />
         <HowItWorks />
         <PracticalWork />

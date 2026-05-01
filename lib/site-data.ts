@@ -1,15 +1,15 @@
 export const navLinks = [
-  { label: "Products", href: "/promptbridge" },
-  { label: "Solutions", href: "/showcase" },
+  { label: "PromptBridge", href: "/promptbridge" },
+  { label: "Daily Use of AI", href: "/daily-ai" },
+  { label: "AI in Action", href: "/showcase" },
   { label: "How It Works", href: "/#how-it-works" },
-  { label: "About", href: "/#about" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const footerLinks = [
-  { label: "Products", href: "/promptbridge" },
-  { label: "Solutions", href: "/showcase" },
+  { label: "PromptBridge", href: "/promptbridge" },
+  { label: "Daily Use of AI", href: "/daily-ai" },
+  { label: "AI in Action", href: "/showcase" },
   { label: "How It Works", href: "/#how-it-works" },
-  { label: "About", href: "/#about" },
   { label: "Contact", href: "/contact" },
 ];
