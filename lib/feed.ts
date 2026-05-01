@@ -63,7 +63,7 @@ export const feedItems: FeedItem[] = [
   },
   {
     id:          "workflow-support-001",
-    status:      "draft",
+    status:      "approved",
     category:    "workflow",
     title:       "Auto-tag and route support requests by topic",
     description: "Route incoming support emails through a classification prompt and drop them into the right folder automatically.",
