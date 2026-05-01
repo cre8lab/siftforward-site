@@ -10,7 +10,7 @@ export default function Logo({ variant = "default", showTagline = true }: LogoPr
   const taglineColor = variant === "white" ? "text-[#94a3b8]" : "text-[#64748B]";
 
   return (
-    <Link href="/" className="flex items-center gap-2.5">
+    <Link href="/" className="flex items-center gap-2.5" aria-label="SiftForward">
       <LogoMark />
       <div className="leading-tight">
         <div className={`text-xl font-bold tracking-tight ${wordmarkColor}`}>

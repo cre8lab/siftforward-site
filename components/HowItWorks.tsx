@@ -59,6 +59,9 @@ export default function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight">
             How it works
           </h2>
+          <p className="mt-3 text-[#64748B] max-w-lg mx-auto">
+            Sift through the noise. Winnow what matters. Move forward.
+          </p>
         </div>
 
         {/* Steps with connectors */}

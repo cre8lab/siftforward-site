@@ -44,12 +44,16 @@ export default async function DevToFeed() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="flex items-end justify-between mb-10">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight mb-3">
-                From the field
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-1.5 bg-[#F0F9FF] border border-[#bae6fd] text-[#0369a1] text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#06B6D4]" />
+                Curated reading · refreshes every 10 min
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight">
+                Worth reading
               </h2>
               <p className="text-[#64748B] max-w-lg">
-                Recent articles from the developer community on AI, tools, and practical automation.
+                Practical writing on AI tools, workflow automation, and developer productivity — surfaced from the broader community and updated regularly.
               </p>
             </div>
             <a

@@ -159,7 +159,7 @@ export default function AIInAction() {
             </div>
             <div className="flex-1 p-5 space-y-4">
               <div className="inline-flex items-center gap-2 bg-[#1E293B] rounded-lg px-3 py-2">
-                <span className="text-[10px] font-bold text-[#06B6D4] uppercase">POST</span>
+                <span className="text-xs font-bold text-[#06B6D4]">POST</span>
                 <span className="text-xs font-mono text-[#e2e8f0]">/api/v1/sift</span>
               </div>
 

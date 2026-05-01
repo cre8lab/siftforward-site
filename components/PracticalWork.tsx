@@ -62,7 +62,7 @@ export default function PracticalWork() {
             </p>
             <div className="flex items-center gap-2 pt-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#14B8A6]" />
-              <span className="text-sm font-medium text-[#14B8A6]">No data center imagery. No buzzwords.</span>
+              <span className="text-sm font-medium text-[#14B8A6]">Practical tools. Clear outcomes. No hype.</span>
             </div>
           </div>
 

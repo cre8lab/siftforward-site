@@ -82,12 +82,16 @@ export default async function HNFeed() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="flex items-end justify-between mb-10">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight mb-3">
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-1.5 bg-[#F0FDFA] border border-[#99f6e4] text-[#0d9488] text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#14B8A6]" />
+                Filtered signal · refreshes every 10 min
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight">
                 Signal from the community
               </h2>
               <p className="text-[#64748B] max-w-lg">
-                Top Hacker News discussions on AI, automation, and workflow — filtered and surfaced automatically.
+                SiftForward filters the AI and automation conversation on Hacker News down to what&apos;s actually worth reading — so you don&apos;t have to watch the firehose.
               </p>
             </div>
             <a
