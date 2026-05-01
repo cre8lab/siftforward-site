@@ -47,7 +47,7 @@ export const feedItems: FeedItem[] = [
   },
   {
     id:          "insight-email-001",
-    status:      "pending",
+    status:      "approved",
     category:    "insight",
     title:       "Extract decisions from a long email thread",
     description: "Feed in a long email thread and get back only the decisions made, the open questions, and the agreed next step.",
@@ -55,7 +55,7 @@ export const feedItems: FeedItem[] = [
   },
   {
     id:          "prompt-hiring-001",
-    status:      "pending",
+    status:      "approved",
     category:    "prompt",
     title:       "Job description → focused interview guide",
     description: "Paste a job description and get back structured interview questions organized by skill area and seniority level.",
