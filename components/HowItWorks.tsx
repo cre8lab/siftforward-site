@@ -63,8 +63,10 @@ export default function HowItWorks() {
 
         {/* Steps with connectors */}
         <div className="relative">
-          {/* Connector line (desktop only) */}
-          <div className="hidden lg:block absolute top-[52px] left-[calc(12.5%+24px)] right-[calc(12.5%+24px)] h-px bg-gradient-to-r from-[#E2E8F0] via-[#14B8A6]/30 to-[#E2E8F0]" />
+          {/* Connector line with signal shimmer (desktop only) */}
+          <div className="hidden lg:block absolute top-[52px] left-[calc(12.5%+24px)] right-[calc(12.5%+24px)] h-px bg-gradient-to-r from-[#E2E8F0] via-[#14B8A6]/30 to-[#E2E8F0] overflow-hidden">
+            <div className="absolute top-0 bottom-0 w-24 bg-gradient-to-r from-transparent via-[#14B8A6]/30 to-transparent signal-shimmer" />
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5">
             {steps.map((step, i) => (

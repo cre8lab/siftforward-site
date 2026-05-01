@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SignalFlowMini from "./SignalFlowMini";
 
 const FULL_PROMPT = `You are a practical AI assistant.
 
@@ -90,7 +91,7 @@ export default function AIInAction() {
             </div>
           </div>
 
-          <ColumnConnector />
+          <SignalFlowMini delay={0} />
 
           {/* Column 2: Prompt */}
           <div className="flex flex-col rounded-2xl overflow-hidden border border-[#1E293B] bg-[#0F172A]">
@@ -118,7 +119,7 @@ export default function AIInAction() {
             </div>
           </div>
 
-          <ColumnConnector />
+          <SignalFlowMini delay={0.6} />
 
           {/* Column 3: Outcome */}
           <div className="flex flex-col rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden">
@@ -148,7 +149,7 @@ export default function AIInAction() {
             </div>
           </div>
 
-          <ColumnConnector />
+          <SignalFlowMini delay={1.2} />
 
           {/* Column 4: API / Workflow */}
           <div className="flex flex-col rounded-2xl border border-[#1E293B] bg-[#0F172A] overflow-hidden">
@@ -199,13 +200,3 @@ function ColumnHeader({ dot, label }: { dot: string; label: string }) {
   );
 }
 
-function ColumnConnector() {
-  return (
-    <div className="hidden lg:flex items-center justify-center w-8 flex-shrink-0">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-        <circle cx="14" cy="14" r="12" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
-        <path d="M8 14h12M16 10l4 4-4 4" stroke="#94a3b8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    </div>
-  );
-}

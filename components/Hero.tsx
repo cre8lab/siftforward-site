@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroPortalBackground from "./HeroPortalBackground";
 
 const outputCards = [
   { title: "AI Workflows", desc: "Extract. Enrich. Understand.", color: "#14B8A6" },
@@ -66,6 +67,9 @@ export default function Hero() {
 function HeroIllustration() {
   return (
     <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#F0FDFA] via-[#F8FAFC] to-[#EFF6FF] border border-[#d1fae5] shadow-2xl">
+      {/* Canvas animation layer — noise field drifting toward the sift core */}
+      <HeroPortalBackground />
+
       {/* Subtle dot-grid background */}
       <div
         className="absolute inset-0 pointer-events-none"

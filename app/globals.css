@@ -18,3 +18,29 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Signal pulse: dot travels left→right along the connector arrow.
+   All properties declared at every stop so no browser interpolates inconsistently. */
+@keyframes signal-pulse {
+  0%   { transform: translateX(0px);   opacity: 0;    }
+  10%  { transform: translateX(1.2px); opacity: 0.68; }
+  90%  { transform: translateX(10.8px);opacity: 0.68; }
+  100% { transform: translateX(12px);  opacity: 0;    }
+}
+
+/* Shimmer: a faint highlight glides left→right along the HowItWorks connector line.
+   Linear timing fits the "data packet" metaphor — constant speed, not eased. */
+@keyframes signal-shimmer {
+  from { transform: translateX(-96px); }
+  to   { transform: translateX(1200px); }
+}
+
+.signal-shimmer {
+  animation: signal-shimmer 5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signal-shimmer {
+    animation: none;
+  }
+}
